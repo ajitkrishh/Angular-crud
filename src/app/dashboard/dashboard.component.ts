@@ -68,14 +68,10 @@ export class DashboardComponent implements OnInit, AfterViewInit {
         }
         this.update();
       }
-
       DialogData = {};
-
-
     })
   }
   add() {
-    console.log(this.id);
 
     const formdialog = this.dialogModel.open(DialogComponent, { data: DialogData });
 
